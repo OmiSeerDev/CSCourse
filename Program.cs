@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 ﻿internal class Program {
     private static void Main(string[] args) {
         var result = 0d;
@@ -8,6 +9,23 @@
                     Console.WriteLine("Area Calculator");
                     double sideA;
                     double sideB;
+=======
+﻿using System.Linq;
+
+internal class Program {
+    public static bool play = true;
+    private static void Main(string[] args) {
+        var result = 0d;
+
+        do {
+            Console.WriteLine("MENU\nEscriba una opcion\nRect\nCirc\nLogic\nStr");
+            string option = Console.ReadLine().ToUpper();
+            switch (option) {
+                case "RECT": {
+                        Console.WriteLine("Area Calculator");
+                        double sideA;
+                        double sideB;
+>>>>>>> Stashed changes
 
                     Console.WriteLine("Type a width for the rectangle in cm");
                     sideA = Convert.ToDouble(Console.ReadLine());
@@ -54,6 +72,7 @@
                     string profession = "Cook";
                     string hobbie = "Music";
 
+<<<<<<< Updated upstream
                     string identification = $"La info es la siguiente: \nAltura: {height} \n Name: {name.ToUpper()}\nProfession: {profession}\nHobbie: {hobbie}";
                     Console.WriteLine(identification);
                     break;
@@ -66,5 +85,32 @@
                     break;
                 }
         }
+=======
+                        string identification = $"La info es la siguiente: \nAltura: {height} \n Name: {name.ToUpper()}\nProfession: {profession}\nHobbie: {hobbie}";
+                        Console.WriteLine(identification);
+                        break;
+                    }
+                case "EXIT": { Program.play = false; if (!Program.play) { Console.WriteLine("Stopping..."); } break; }
+                default: {
+                        Console.WriteLine("WTF are you doing");
+                        Console.Clear();
+                        Program.Main(args);
+                        break;
+                    }
+            }
+        } while (play);
+
+        //Arrays
+        
+        System.Random rand = new Random();
+        int[] numbers = { rand.Next(1,13),rand.Next(1, 13),rand.Next(1, 13),rand.Next(1, 13)};
+        for (int i = 0; i < numbers.Length; i++) {
+            numbers[i]= rand.Next(1, 13);
+        }
+        for (int i = 0; i < numbers.Length; i++) {
+            Console.Write($"{numbers[i]} ");
+        }
+        
+>>>>>>> Stashed changes
     }
 }
