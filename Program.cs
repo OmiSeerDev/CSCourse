@@ -1,27 +1,7 @@
-<<<<<<< Updated upstream
-﻿internal class Program {
-    public static bool play = true;
-    private static void Main(string[] args) {
-        var result = 0d;
-<<<<<<< HEAD
-        Console.WriteLine("MENU\nEscriba una opcion\nRect\nCirc\nLogic\nStr");
-        string option = Console.ReadLine().ToUpper();
-        switch (option) {
-            case "RECT": {
-                    Console.WriteLine("Area Calculator");
-                    double sideA;
-                    double sideB;
-=======
-﻿using System.Linq;
-
 internal class Program {
     public static bool play = true;
     private static void Main(string[] args) {
         var result = 0d;
-
-=======
-    
->>>>>>> refs/remotes/origin/master
         do {
             Console.WriteLine("MENU\nEscriba una opcion\nRect\nCirc\nLogic\nStr");
             string option = Console.ReadLine().ToUpper();
@@ -30,10 +10,6 @@ internal class Program {
                         Console.WriteLine("Area Calculator");
                         double sideA;
                         double sideB;
-<<<<<<< HEAD
->>>>>>> Stashed changes
-=======
->>>>>>> refs/remotes/origin/master
 
                         Console.WriteLine("Type a width for the rectangle in cm");
                         sideA = Convert.ToDouble(Console.ReadLine());
@@ -79,24 +55,6 @@ internal class Program {
                         string name = "Hernando";
                         string profession = "Cook";
                         string hobbie = "Music";
-
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-                    string identification = $"La info es la siguiente: \nAltura: {height} \n Name: {name.ToUpper()}\nProfession: {profession}\nHobbie: {hobbie}";
-                    Console.WriteLine(identification);
-                    break;
-                }
-            case "EXIT": return;
-            default: {
-                    Console.WriteLine("WTF are you doing");
-                    Console.Clear();
-                    Program.Main(args);
-                    break;
-                }
-        }
-=======
-=======
->>>>>>> refs/remotes/origin/master
                         string identification = $"La info es la siguiente: \nAltura: {height} \n Name: {name.ToUpper()}\nProfession: {profession}\nHobbie: {hobbie}";
                         Console.WriteLine(identification);
                         break;
@@ -110,7 +68,6 @@ internal class Program {
                     }
             }
         } while (play);
-<<<<<<< HEAD
 
         //Arrays
         
@@ -122,9 +79,5 @@ internal class Program {
         for (int i = 0; i < numbers.Length; i++) {
             Console.Write($"{numbers[i]} ");
         }
-        
->>>>>>> Stashed changes
-=======
->>>>>>> refs/remotes/origin/master
     }
 }
