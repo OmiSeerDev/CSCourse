@@ -72,8 +72,8 @@ internal class Program {
         //Arrays
         
         System.Random rand = new Random();
-        int[] numbers = { rand.Next(1,13),rand.Next(1, 13),rand.Next(1, 13),rand.Next(1, 13)};
-        for (int i = 0; i < numbers.Length; i++) {
+        int[] numbers = new int[9];
+        for (int i = 0; i < 9; i++) {
             numbers[i]= rand.Next(1, 13);
         }
         for (int i = 0; i < numbers.Length; i++) {
